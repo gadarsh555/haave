@@ -50,8 +50,17 @@ span {
 		transform: rotate(360deg);
 	}
 }
-
-@media (max-width: 760px) {
+@media (max-width: 900px) {
+	.Header-content {
+		padding: 0 10%;
+	}
+}
+@media (max-width: 700px) {
+	.Header-content {
+		padding: 0 5%;
+	}
+}
+@media (max-width: 600px) {
 	.Header-content {
 		padding: 0 5%;
 	}
