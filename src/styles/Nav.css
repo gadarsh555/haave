@@ -11,14 +11,14 @@ img {
 	vertical-align: top;
 	height: 100%;
 }
-ul {
+.horizontal {
 	display: table;
 	list-style-type: none;
 	margin: 0;
 	height: 100%;
 }
 
-li {
+.horizontal li {
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -65,13 +65,49 @@ a:hover {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
 }
+.vi-container {
+	background-color: white;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	text-align: center;
+	width: 0;
+	transition: width 0.2s ease-in-out;
+}
+.change .vi-container {
+	width: 300px;
+	transition: width 0.2s ease-in-out;
+}
+.vertical {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-top: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+}
+.vertical li {
+	text-decoration: none;
+	border-bottom: 1px solid #ebebeb;
+	padding: 0;
+	transition: background-color 0.1s ease-in-out;
+}
+.vertical a {
+	color: #4a4a4a;
+	font-size: 1rem;
+	letter-spacing: 0.02em;
+	padding-top: 8px;
+	line-height: 70px;
+	box-sizing: border-box;
+	height: 80px;
+}
 /* ======= Responsive Design ======== */
 /* 700px */
 @media (max-width: 700px) {
 	#ham-container {
 		display: inline-block;
 	}
-	ul {
+	.horizontal {
 		display: none;
 	}
 }

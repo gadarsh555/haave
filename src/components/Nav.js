@@ -13,7 +13,7 @@ class Nav extends Component {
 			<nav>
 				<img src={require('../img/haave.png')} />
 				<div className="ul-container">
-					<ul>
+					<ul className="horizontal">
 						<li>
 							<a href="#">Services</a>
 						</li>
@@ -33,6 +33,19 @@ class Nav extends Component {
 					<div className="bar1" />
 					<div className="bar2" />
 					<div className="bar3" />
+					<div className="vi-container">
+						<ul className="vertical">
+							<li>
+								<a href="#">Services</a>
+							</li>
+							<li>
+								<a href="#">Healthcare</a>
+							</li>
+							<li>
+								<a href="#">Join Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		);
