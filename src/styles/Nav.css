@@ -36,8 +36,11 @@ a:hover {
 }
 /* =========== Hamburger ========= */
 #ham-container {
-	display: inline-block;
+	display: none;
 	cursor: pointer;
+	vertical-align: top;
+	float: right;
+	padding: 22px;
 }
 .bar1,
 .bar2,
@@ -47,6 +50,7 @@ a:hover {
 	background-color: #333;
 	margin: 6px 0;
 	transition: 0.4s;
+	color: #002960;
 }
 .change .bar1 {
 	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -60,4 +64,14 @@ a:hover {
 .change .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
+}
+/* ======= Responsive Design ======== */
+/* 700px */
+@media (max-width: 700px) {
+	#ham-container {
+		display: inline-block;
+	}
+	ul {
+		display: none;
+	}
 }

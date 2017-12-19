@@ -3,17 +3,7 @@ import ReactDOM from 'react-dom';
 import '../styles/Nav.css';
 
 class Nav extends Component {
-	// constructor(props) {
-	// 	super(props);
-	// }
-	//
-	// getInitialState() {
-	// 	return { bar1: 'bar1', bar2: 'bar2', bar3: 'bar3' };
-	// }
-
 	openBurger() {
-		// var burger = this.refs.Burger.children;
-		// console.log(burger);
 		var node = ReactDOM.findDOMNode(this.refs.Burger);
 		node.classList.toggle('change');
 	}
