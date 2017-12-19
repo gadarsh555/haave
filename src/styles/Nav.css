@@ -10,12 +10,14 @@ img {
 	display: inline-block;
 	vertical-align: top;
 	height: 100%;
+	float: right;
 }
 .horizontal {
 	display: table;
 	list-style-type: none;
 	margin: 0;
 	height: 100%;
+	padding-right: 40px;
 }
 
 .horizontal li {
@@ -33,6 +35,10 @@ a {
 }
 a:hover {
 	color: #00adef;
+}
+
+.vertical li:hover {
+	background-color: #ebebeb;
 }
 /* =========== Hamburger ========= */
 #ham-container {

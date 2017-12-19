@@ -23,6 +23,9 @@ class Nav extends Component {
 						<li>
 							<a href="#">Join Us</a>
 						</li>
+						<li>
+							<a href="#">Start a Project</a>
+						</li>
 					</ul>
 				</div>
 				<div
@@ -43,6 +46,9 @@ class Nav extends Component {
 							</li>
 							<li>
 								<a href="#">Join Us</a>
+							</li>
+							<li>
+								<a href="#">Start a Project</a>
 							</li>
 						</ul>
 					</div>
