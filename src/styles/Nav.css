@@ -79,6 +79,8 @@ a:hover {
 	text-align: center;
 	width: 0;
 	transition: width 0.2s ease-in-out;
+	height: 284.97px;
+	overflow: hidden;
 }
 .change .vi-container {
 	width: 300px;
