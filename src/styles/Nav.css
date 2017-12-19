@@ -1,0 +1,36 @@
+nav {
+	height: 80px;
+	text-align: left;
+}
+
+img {
+	height: 100%;
+}
+.ul-container {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+ul {
+	display: table;
+	list-style-type: none;
+	margin: 0;
+	height: 100%;
+}
+
+li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+a {
+	padding: 0 16px;
+	font-size: 0.875rem;
+	color: #002960;
+	text-decoration: none;
+	font-weight: 400;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a:hover {
+	color: #00adef;
+}
