@@ -19,6 +19,12 @@ class App extends Component {
 							Helping leaders solve complex problems using advanced machine
 							learning to generate revenue, reduce costs and move audiences.
 						</p>
+						<div>
+							<a href="#">
+								Learn More
+								<span>&rarr;</span>
+							</a>
+						</div>
 					</div>
 				</header>
 			</div>

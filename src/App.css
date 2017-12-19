@@ -17,20 +17,48 @@
 
 .Header-content {
 	text-align: left;
-	padding-left: 20%;
+	padding: 0 20%;
 }
 .Header-content h1 {
 	font-size: 3em;
 }
 .Header-content p {
-	margin-top: 50px;
+	margin: 50px 0;
+	line-height: 30px;
 }
-
+.Header-content a {
+	padding: 0;
+	color: #002960;
+	text-decoration: none;
+	width: 95px;
+	transition: width 0.2s ease-in-out;
+	display: block;
+}
+.Header-content a:hover {
+	color: #00adef;
+	width: 110px;
+	transition: width 0.2s ease-in-out;
+}
+span {
+	float: right;
+}
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 760px) {
+	.Header-content {
+		padding: 0 5%;
+	}
+	.Header-content h1 {
+		font-size: 2.2em;
+	}
+	.Header-content p {
+		margin: 25px 0;
 	}
 }
