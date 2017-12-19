@@ -12,8 +12,14 @@ class App extends Component {
 					<Nav />
 				</div>
 				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<h1 className="App-title">Welcome to React</h1>
+					<div className="Header-content">
+						<h1>Intelligent Insights</h1>
+						<h1>Data-Driven Decisions</h1>
+						<p>
+							Helping leaders solve complex problems using advanced machine
+							learning to generate revenue, reduce costs and move audiences.
+						</p>
+					</div>
 				</header>
 			</div>
 		);
