@@ -12,9 +12,10 @@
 	background-size: cover;
 }
 
-.Header-content {
+.Header-content,
+#Services {
 	text-align: left;
-	padding: 0 20%;
+	padding: 0 25%;
 }
 .Header-content h1 {
 	font-size: 3em;
@@ -40,28 +41,25 @@
 span {
 	float: right;
 }
-/*@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
+@media (max-width: 1450px) {
+	.Header-content,
+	#Services {
+		padding: 0 20%;
 	}
-	to {
-		transform: rotate(360deg);
-	}
-}*/
+}
 @media (max-width: 900px) {
-	.Header-content {
+	.Header-content,
+	#Services {
 		padding: 0 10%;
 	}
 }
 @media (max-width: 700px) {
-	.Header-content {
+	.Header-content,
+	#Services {
 		padding: 0 5%;
 	}
 }
 @media (max-width: 600px) {
-	.Header-content {
-		padding: 0 5%;
-	}
 	.Header-content h1 {
 		font-size: 2em;
 	}
@@ -72,5 +70,10 @@ span {
 @media (max-width: 500px) {
 	.Header-content h1 {
 		font-size: 1.8em;
+	}
+}
+@media (max-width: 400px) {
+	.Header-content h1 {
+		font-size: 1.6em;
 	}
 }
