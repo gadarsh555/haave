@@ -62,14 +62,11 @@ span {
 	}
 }
 @media (max-width: 600px) {
-	.App-header {
-		height: 450px;
-	}
 	.Header-content {
 		padding: 0 5%;
 	}
 	.Header-content h1 {
-		font-size: 2.2em;
+		font-size: 2em;
 	}
 	.Header-content p {
 		margin: 25px 0;
