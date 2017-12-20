@@ -13,6 +13,7 @@
 	padding: 20px;
 	color: white;
 	background-image: url('./img/header.jpg');
+	background-size: cover;
 }
 
 .Header-content {
