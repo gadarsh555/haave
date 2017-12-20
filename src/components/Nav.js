@@ -15,7 +15,7 @@ class Nav extends Component {
 				<div className="ul-container">
 					<ul className="horizontal">
 						<li>
-							<a href="#">Services</a>
+							<a href="#Services">Services</a>
 						</li>
 						<li>
 							<a href="#">Healthcare</a>
@@ -39,7 +39,7 @@ class Nav extends Component {
 					<div className="vi-container">
 						<ul className="vertical">
 							<li>
-								<a href="#">Services</a>
+								<a href="#Services">Services</a>
 							</li>
 							<li>
 								<a href="#">Healthcare</a>
