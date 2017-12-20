@@ -14,18 +14,18 @@ class Nav extends Component {
 				<img src={require('../img/haave.png')} />
 				<div className="ul-container">
 					<ul className="horizontal">
-						<li>
-							<a href="#Services">Services</a>
-						</li>
-						<li>
-							<a href="#">Healthcare</a>
-						</li>
-						<li>
-							<a href="#">Join Us</a>
-						</li>
-						<li>
-							<a href="#">Start a Project</a>
-						</li>
+						<a href="#Services">
+							<li>Services</li>
+						</a>
+						<a href="#">
+							<li>Healthcare</li>
+						</a>
+						<a href="#">
+							<li>Join Us</li>
+						</a>
+						<a href="#">
+							<li>Start a Project</li>
+						</a>
 					</ul>
 				</div>
 				<div
