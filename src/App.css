@@ -1,11 +1,7 @@
-/*.App {
-	text-align: center;
-}*/
-
-/*.App-logo {
-	animation: App-logo-spin infinite 20s linear;
-	height: 80px;
-}*/
+@font-face {
+	font-family: 'Helvetica Neue Thin';
+	src: url('./fonts/HelveticaNeue-Thin.otf');
+}
 
 .App-header {
 	/*background-color: #222;*/
@@ -22,6 +18,7 @@
 }
 .Header-content h1 {
 	font-size: 3em;
+	font-family: 'Helvetica Neue Thin';
 }
 .Header-content p {
 	margin: 50px 0;
