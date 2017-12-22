@@ -21,9 +21,12 @@ class App extends Component {
 								learning to generate revenue, reduce costs and move audiences.
 							</p>
 							<div>
-								<a href="#Services">
+								{/* <a href="#Services">
 									Learn More
 									<span>&rarr;</span>
+								</a> */}
+								<a href="#Services" className="button">
+									<button>Learn More</button>
 								</a>
 							</div>
 						</div>
