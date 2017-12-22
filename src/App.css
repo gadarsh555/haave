@@ -7,14 +7,20 @@
 	height: calc(100vh - 120px);
 	min-height: 400px;
 	width: 100%;
-	display: table-cell;
-	vertical-align: middle;
 	padding: 20px;
 	color: white;
 	background-image: url('./img/header.jpg');
 	background-size: cover;
 }
-
+.Header-content {
+	display: table;
+	height: 100%;
+}
+.Header-middle {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
 .Header-content,
 #Services {
 	text-align: left;
