@@ -1,0 +1,16 @@
+#Template {
+	width: 33%;
+	display: inline-block;
+}
+#Template img {
+	width: 210px;
+}
+#Template h4 {
+	color: #00306e;
+	margin-bottom: 0;
+}
+#Template p {
+	color: #666;
+	font-style: italic;
+	margin-bottom: 0;
+}

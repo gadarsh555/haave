@@ -3,6 +3,7 @@ import './App.css';
 
 import Nav from './components/Nav';
 import Services from './components/Services';
+import Articles from './components/Articles';
 
 class App extends Component {
 	render() {
@@ -35,6 +36,11 @@ class App extends Component {
 				<div>
 					<div id="Services">
 						<Services />
+					</div>
+				</div>
+				<div>
+					<div id="Articles">
+						<Articles />
 					</div>
 				</div>
 			</div>

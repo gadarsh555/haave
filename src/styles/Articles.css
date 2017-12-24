@@ -1,0 +1,16 @@
+#article-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#article-container h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+hr {
+	color: #d4d4d4;
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+#article-individuals {
+	width: 100%;
+}
