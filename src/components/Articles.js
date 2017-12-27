@@ -8,9 +8,12 @@ class Articles extends Component {
 	render() {
 		return (
 			<div id="article-container">
-				<h3>Healthcare Articles</h3>
-				<hr />
+				<div id="article-title">
+					<h3>Healthcare Articles</h3>
+					<hr />
+				</div>
 				<div id="article-individuals">
+					<ArticleTemplate />
 					<ArticleTemplate />
 					<ArticleTemplate />
 					<ArticleTemplate />

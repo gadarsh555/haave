@@ -22,7 +22,7 @@
 }
 .Header-content,
 #Services,
-#Articles {
+#article-title {
 	text-align: left;
 	padding: 0 25%;
 }
@@ -68,21 +68,21 @@ span {
 @media (max-width: 1450px) {
 	.Header-content,
 	#Services,
-	#Articles {
+	#article-title {
 		padding: 0 20%;
 	}
 }
 @media (max-width: 900px) {
 	.Header-content,
 	#Services,
-	#Articles {
+	#article-title {
 		padding: 0 10%;
 	}
 }
 @media (max-width: 700px) {
 	.Header-content,
 	#Services,
-	#Articles {
+	#article-title {
 		padding: 0 5%;
 	}
 }
