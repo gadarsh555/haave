@@ -16,7 +16,6 @@ class Articles extends Component {
 					<ArticleTemplate />
 					<ArticleTemplate />
 					<ArticleTemplate />
-					<ArticleTemplate />
 				</div>
 			</div>
 		);

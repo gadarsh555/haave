@@ -1,18 +1,32 @@
-#Template {
-	/*width: 250px;*/
+.Template {
 	display: inline-block;
 	text-align: left;
-	margin: 0 15px;
+	margin-right: 20px;
+	width: calc(33.3333% - 15px);
 }
-#Template img {
-	width: 220px;
+.Template:last-of-type {
+	margin-right: 0;
 }
-#Template h4 {
+.Template img {
+	width: 100%;
+}
+.Template h4 {
 	color: #00306e;
-	margin-bottom: 0;
 }
-#Template p {
+.Template p {
 	color: #666;
 	font-style: italic;
+}
+.Template h4,
+.Template p {
+	margin-top: 10px;
 	margin-bottom: 0;
+}
+@media (max-width: 700px) {
+	.Template {
+		display: block;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 45px;
+	}
 }

@@ -1,6 +1,6 @@
 #article-container {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 #article-container h3 {
 	margin-top: 0;
@@ -13,5 +13,4 @@ hr {
 }
 #article-individuals {
 	width: 100%;
-	text-align: center;
 }

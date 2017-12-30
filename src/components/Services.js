@@ -5,7 +5,7 @@ class Services extends Component {
 	render() {
 		return (
 			<div>
-				<h3>
+				<h3 className="service-title">
 					<b>Haave</b> is a data science consulting firm. Discover how our
 					combination of experience and training can help grow your business.
 				</h3>
