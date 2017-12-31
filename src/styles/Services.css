@@ -1,8 +1,11 @@
 b {
 	font-size: 2em;
 }
+.service-container {
+	padding-top: 60px;
+}
 .service-title {
-	margin-top: 60px;
+	margin-top: 0;
 	color: #002960;
 	line-height: 1.5;
 }

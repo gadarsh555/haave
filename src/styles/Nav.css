@@ -78,7 +78,7 @@ a {
 	text-align: center;
 	width: 0;
 	transition: width 0.2s ease-in-out;
-	height: 284.97px;
+	height: 356px;
 	overflow: hidden;
 }
 .change .vi-container {
@@ -110,7 +110,7 @@ a {
 }
 /* ======= Responsive Design ======== */
 /* 700px */
-@media (max-width: 700px) {
+@media (max-width: 740px) {
 	#ham-container {
 		display: inline-block;
 	}

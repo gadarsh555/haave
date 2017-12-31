@@ -17,6 +17,9 @@ class Nav extends Component {
 						<a href="#Services">
 							<li>Services</li>
 						</a>
+						<a href="#Articles">
+							<li>Articles</li>
+						</a>
 						<a href="#">
 							<li>Healthcare</li>
 						</a>
@@ -40,6 +43,9 @@ class Nav extends Component {
 						<ul className="vertical">
 							<li>
 								<a href="#Services">Services</a>
+							</li>
+							<li>
+								<a href="#Articles">Articles</a>
 							</li>
 							<li>
 								<a href="#">Healthcare</a>

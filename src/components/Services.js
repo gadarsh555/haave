@@ -4,7 +4,7 @@ import '../styles/Services.css';
 class Services extends Component {
 	render() {
 		return (
-			<div>
+			<div className="service-container">
 				<h3 className="service-title">
 					<b>Haave</b> is a data science consulting firm. Discover how our
 					combination of experience and training can help grow your business.

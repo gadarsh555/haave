@@ -7,15 +7,17 @@ import ArticleTemplate from './ArticleTemplate.js';
 class Articles extends Component {
 	render() {
 		return (
-			<div id="article-container">
-				<div id="article-title">
-					<h3>Healthcare Articles</h3>
-					<hr />
-				</div>
-				<div id="article-individuals">
-					<ArticleTemplate />
-					<ArticleTemplate />
-					<ArticleTemplate />
+			<div id="Articles">
+				<div id="article-container">
+					<div id="article-title">
+						<h3>Healthcare Articles</h3>
+						<hr />
+					</div>
+					<div id="article-individuals">
+						<ArticleTemplate />
+						<ArticleTemplate />
+						<ArticleTemplate />
+					</div>
 				</div>
 			</div>
 		);
