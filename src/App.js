@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Services from './components/Services';
 import Articles from './components/Articles';
+import CaseStudy from './components/CaseStudy';
 
 class App extends Component {
 	render() {
@@ -22,10 +23,6 @@ class App extends Component {
 								learning to generate revenue, reduce costs and move audiences.
 							</p>
 							<div>
-								{/* <a href="#Services">
-									Learn More
-									<span>&rarr;</span>
-								</a> */}
 								<a href="#Services" className="button">
 									<button>Learn More</button>
 								</a>
@@ -41,6 +38,11 @@ class App extends Component {
 				<div>
 					<div id="Articles">
 						<Articles />
+					</div>
+				</div>
+				<div>
+					<div id="CaseStudy">
+						<CaseStudy />
 					</div>
 				</div>
 			</div>

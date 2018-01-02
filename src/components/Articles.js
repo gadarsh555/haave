@@ -10,7 +10,7 @@ class Articles extends Component {
 			<div id="Articles">
 				<div id="article-container">
 					<div id="article-title">
-						<h3>Healthcare Articles</h3>
+						<h3>News</h3>
 						<hr />
 					</div>
 					<div id="article-individuals">

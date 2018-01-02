@@ -1,0 +1,16 @@
+#CaseStudy {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#case-title img,
+#case-title h3 {
+	display: inline-block;
+	vertical-align: top;
+}
+#case-title img {
+	width: 75px;
+}
+#case-title h3 {
+	height: 25px;
+	margin: 25px;
+}
