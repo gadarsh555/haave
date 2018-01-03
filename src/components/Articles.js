@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import '../styles/Articles.css';
 
 import ArticleTemplate from './ArticleTemplate.js';

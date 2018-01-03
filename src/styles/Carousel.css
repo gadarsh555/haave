@@ -1,0 +1,30 @@
+.carousel-control-next-icon {
+	background-image: url(../img/right.png);
+}
+.carousel-control-prev-icon {
+	background-image: url(../img/left.png);
+}
+.carousel-inner {
+	padding: 0 25%;
+	height: 280px;
+	/*display: table;*/
+}
+/*.carousel-item.active {
+	display: table-cell;
+	vertical-align: middle;
+}*/
+@media (max-width: 1450px) {
+	.carousel-inner {
+		padding: 0 20%;
+	}
+}
+@media (max-width: 900px) {
+	.carousel-inner {
+		padding: 0 10%;
+	}
+}
+@media (max-width: 700px) {
+	.carousel-inner {
+		padding: 0 5%;
+	}
+}

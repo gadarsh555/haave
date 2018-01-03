@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Services from './components/Services';
 import Articles from './components/Articles';
 import CaseStudy from './components/CaseStudy';
+import Slides from './components/Carousel';
 
 class App extends Component {
 	render() {
@@ -44,6 +45,9 @@ class App extends Component {
 					<div id="CaseStudy">
 						<CaseStudy />
 					</div>
+				</div>
+				<div>
+					<Slides />
 				</div>
 			</div>
 		);
