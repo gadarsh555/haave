@@ -2,7 +2,7 @@
 	display: inline-block;
 	text-align: left;
 	margin-right: 20px;
-	width: calc(33.3333% - 15px);
+	width: calc(33.3333% - 13.3333px);
 }
 .Template:last-of-type {
 	margin-right: 0;
