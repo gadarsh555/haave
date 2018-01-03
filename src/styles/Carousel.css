@@ -5,26 +5,56 @@
 	background-image: url(../img/left.png);
 }
 .carousel-inner {
-	padding: 0 25%;
-	height: 280px;
-	/*display: table;*/
+	height: 240px;
+	margin-bottom: 60px;
+	display: table;
+	overflow: visible;
 }
-/*.carousel-item.active {
-	display: table-cell;
-	vertical-align: middle;
-}*/
+.carousel-item {
+	padding: 0 25%;
+}
 @media (max-width: 1450px) {
-	.carousel-inner {
+	.carousel-item {
 		padding: 0 20%;
 	}
 }
+@media (max-width: 1300px) {
+	.carousel-item {
+		height: 250px;
+	}
+}
+@media (max-width: 1200px) {
+	.carousel-item {
+		height: 270px;
+	}
+}
+@media (max-width: 1057px) {
+	.carousel-item {
+		height: 290px;
+	}
+}
+@media (max-width: 960px) {
+	.carousel-item {
+		height: 320px;
+	}
+}
 @media (max-width: 900px) {
-	.carousel-inner {
+	.carousel-item {
+		height: 290px;
 		padding: 0 10%;
 	}
 }
+@media (max-width: 717px) {
+	.carousel-item {
+		height: 315px;
+	}
+}
 @media (max-width: 700px) {
-	.carousel-inner {
+	.carousel-item {
 		padding: 0 5%;
+		height: auto;
+	}
+	#carousel a {
+		display: none;
 	}
 }

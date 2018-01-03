@@ -29,7 +29,7 @@ a {
 	padding: 0 16px;
 	font-size: 0.875rem;
 	color: #002960;
-	text-decoration: none;
+	text-decoration: none !important;
 	font-weight: 400;
 }
 /*a:hover {
@@ -94,7 +94,7 @@ a {
 	border-left: 1px solid #ebebeb;
 }
 .vertical li {
-	text-decoration: none;
+	text-decoration: none !important;
 	border-bottom: 1px solid #ebebeb;
 	padding: 0;
 	transition: background-color 0.1s ease-in-out;

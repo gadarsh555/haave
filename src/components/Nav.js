@@ -20,7 +20,7 @@ class Nav extends Component {
 						<a href="#Articles">
 							<li>News</li>
 						</a>
-						<a href="#">
+						<a href="#CaseStudy">
 							<li>Case Studies</li>
 						</a>
 						<a href="#">
@@ -48,7 +48,7 @@ class Nav extends Component {
 								<a href="#Articles">News</a>
 							</li>
 							<li>
-								<a href="#">Case Studies</a>
+								<a href="#CaseStudy">Case Studies</a>
 							</li>
 							<li>
 								<a href="#">Join Us</a>

@@ -8,6 +8,7 @@ class CaseStudy extends Component {
 				<div id="case-title">
 					<img src={require('../img/circle.png')} alt="circle" />
 					<h3>Case Study Highlights</h3>
+					<hr />
 				</div>
 			</div>
 		);

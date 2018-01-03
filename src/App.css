@@ -4,7 +4,7 @@
 }
 
 .App-header {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 80px);
 	min-height: 380px;
 	padding: 20px;
 	color: white;
