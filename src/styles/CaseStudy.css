@@ -18,3 +18,22 @@
 	margin-bottom: 0;
 	margin-top: 18px;
 }
+@media (max-width: 460px) {
+	/*#case-title h3,
+	#case-title img {
+		display: block;
+		margin: auto;
+	}
+	#case-title {
+		text-align: center;
+	}
+	#case-title h3 {
+		margin-top: 15px;
+	}*/
+	#case-title img {
+		width: 50px;
+	}
+	#case-title h3 {
+		margin: 12px 0 12px 10px;
+	}
+}

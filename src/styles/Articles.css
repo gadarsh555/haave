@@ -14,3 +14,8 @@ hr {
 #article-individuals {
 	width: 100%;
 }
+/*@media (max-width: 460px) {
+	#article-title h3 {
+		text-align: center;
+	}
+}*/
