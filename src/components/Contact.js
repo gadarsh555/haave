@@ -16,6 +16,9 @@ class Contact extends Component {
 						<input className="form-control" placeholder="Email" />
 						<input className="form-control" placeholder="Phone" />
 						<textarea className="form-control" placeholder="Message" />
+						<button className="btn btn-primary" type="submit">
+							Submit
+						</button>
 					</form>
 				</div>
 				<div className="map" />

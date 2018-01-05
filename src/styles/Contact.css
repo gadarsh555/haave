@@ -7,11 +7,15 @@
 	color: #fff;
 }
 #Contact input,
-#Contact textarea {
+#Contact textarea,
+#Contact button {
 	margin-top: 20px;
 }
 #Contact textarea {
 	height: 200px;
+}
+#Contact button {
+	background-color: #00306e;
 }
 .form {
 	width: calc(50% - 20px);
