@@ -5,7 +5,7 @@
 	background-image: url(../img/left.png);
 }
 .carousel-inner {
-	height: 240px;
+	height: 250px;
 	margin-bottom: 60px;
 	display: table;
 	overflow: visible;
@@ -26,33 +26,33 @@
 }
 @media (max-width: 1300px) {
 	.carousel-item {
-		height: 250px;
+		height: 260px;
 	}
 }
 @media (max-width: 1200px) {
 	.carousel-item {
-		height: 270px;
+		height: 280px;
 	}
 }
 @media (max-width: 1057px) {
 	.carousel-item {
-		height: 290px;
+		height: 300px;
 	}
 }
 @media (max-width: 960px) {
 	.carousel-item {
-		height: 320px;
+		height: 330px;
 	}
 }
 @media (max-width: 900px) {
 	.carousel-item {
-		height: 290px;
+		height: 300px;
 		padding: 0 10%;
 	}
 }
 @media (max-width: 717px) {
 	.carousel-item {
-		height: 315px;
+		height: 325px;
 	}
 }
 @media (max-width: 700px) {
