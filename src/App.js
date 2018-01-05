@@ -7,6 +7,7 @@ import Articles from './components/Articles';
 import CaseStudy from './components/CaseStudy';
 import Slides from './components/Carousel';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 class App extends Component {
 	render() {
@@ -52,6 +53,9 @@ class App extends Component {
 				</div>
 				<div id="Contact">
 					<Contact />
+				</div>
+				<div id="Footer">
+					<Footer />
 				</div>
 			</div>
 		);

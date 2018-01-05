@@ -11,7 +11,7 @@ class Nav extends Component {
 	render() {
 		return (
 			<nav>
-				<img src={require('../img/haave.png')} />
+				<img src={require('../img/haave.png')} alt="logo" />
 				<div className="ul-container">
 					<ul className="horizontal">
 						<a href="#Services">
