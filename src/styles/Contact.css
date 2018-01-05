@@ -1,0 +1,19 @@
+#Contact {
+	background-color: #00adef;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#Contact h3 {
+	color: #fff;
+}
+#Contact input,
+#Contact textarea {
+	margin-top: 20px;
+}
+#Contact textarea {
+	height: 200px;
+}
+.form {
+	width: calc(50% - 20px);
+	margin-right: 20px;
+}

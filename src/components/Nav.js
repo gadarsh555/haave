@@ -51,7 +51,7 @@ class Nav extends Component {
 								<a href="#CaseStudy">Case Studies</a>
 							</li>
 							<li>
-								<a href="#">Join Us</a>
+								<a href="#Contact">Contact Us</a>
 							</li>
 							<li>
 								<a href="#">Start a Project</a>

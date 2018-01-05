@@ -23,7 +23,8 @@
 .Header-content,
 #Services,
 #article-container,
-#CaseStudy {
+#CaseStudy,
+#Contact {
 	text-align: left;
 	padding: 0 25%;
 }
@@ -70,7 +71,8 @@ span {
 	.Header-content,
 	#Services,
 	#article-container,
-	#CaseStudy {
+	#CaseStudy,
+	#Contact {
 		padding: 0 20%;
 	}
 }
@@ -78,7 +80,8 @@ span {
 	.Header-content,
 	#Services,
 	#article-container,
-	#CaseStudy {
+	#CaseStudy,
+	#Contact {
 		padding: 0 10%;
 	}
 }
@@ -86,7 +89,8 @@ span {
 	.Header-content,
 	#Services,
 	#article-container,
-	#CaseStudy {
+	#CaseStudy,
+	#Contact {
 		padding: 0 5%;
 	}
 }
