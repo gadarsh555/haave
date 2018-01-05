@@ -20,11 +20,16 @@ class Contact extends Component {
 							Submit
 						</button>
 					</form>
+					<div className="map">
+						<iframe
+							frameBorder="0"
+							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB82gAD8C6O3UWiNwGcgPhCMTP9zNzS4D8&q=1644+Platte+St+%23400,+Denver,+CO+80202"
+						/>
+					</div>
 				</div>
-				<div className="map" />
 			</div>
 		);
 	}
 }
-
+// AIzaSyB82gAD8C6O3UWiNwGcgPhCMTP9zNzS4D8
 export default Contact;
