@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../styles/Carousel.css';
 
 class Slides extends Component {
+	// get max height of carousel-item class
+	// set height of carousel-item  to max height
 	render() {
 		return (
 			<div id="carousel" className="carousel slide" data-ride="carousel">

@@ -5,13 +5,15 @@
 	background-image: url(../img/left.png);
 }
 .carousel-inner {
-	height: 250px;
 	margin-bottom: 60px;
 	display: table;
 	overflow: visible;
 }
 .carousel-item {
 	padding: 0 25%;
+}
+.carousel-item p {
+	line-height: 1.75rem;
 }
 .company {
 	color: #00306e;
@@ -24,35 +26,9 @@
 		padding: 0 20%;
 	}
 }
-@media (max-width: 1300px) {
-	.carousel-item {
-		height: 260px;
-	}
-}
-@media (max-width: 1200px) {
-	.carousel-item {
-		height: 280px;
-	}
-}
-@media (max-width: 1057px) {
-	.carousel-item {
-		height: 300px;
-	}
-}
-@media (max-width: 960px) {
-	.carousel-item {
-		height: 330px;
-	}
-}
 @media (max-width: 900px) {
 	.carousel-item {
-		height: 300px;
 		padding: 0 10%;
-	}
-}
-@media (max-width: 717px) {
-	.carousel-item {
-		height: 325px;
 	}
 }
 @media (max-width: 700px) {
