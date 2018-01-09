@@ -11,9 +11,11 @@
 }
 .carousel-item {
 	padding: 0 25%;
+	height: 100%;
 }
 .carousel-item p {
 	line-height: 1.75rem;
+	margin-bottom: 0;
 }
 .company {
 	color: #00306e;

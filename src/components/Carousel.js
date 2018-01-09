@@ -2,31 +2,48 @@ import React, { Component } from 'react';
 import '../styles/Carousel.css';
 
 class Slides extends Component {
-	// get max height of carousel-item class
-	// set height of carousel-item  to max height
+	constructor(props) {
+		super(props);
+		this.state = {
+			height: 0
+		};
+	}
+	setHeight() {
+		if (this.divElement !== undefined && this.divElement !== null) {
+			let height = this.divElement.clientHeight;
+			const heightPx = height.toString() + 'px';
+			if (heightPx !== this.state.height) {
+				if (height !== this.state.height) {
+					console.log(this.divElement);
+					this.setState({
+						height: heightPx
+					});
+				}
+			}
+		}
+	}
+	getHeight() {
+		console.log('div', this.divElement);
+		console.log('class', this.divElement.getAttribute('class'));
+	}
+	componentDidMount() {
+		this.setHeight();
+		window.map = this;
+		window.addEventListener('resize', this.setHeight);
+	}
+	componentWillUnMount() {
+		window.removeEventListener('resize', this.setHeight);
+	}
 	render() {
 		return (
 			<div id="carousel" className="carousel slide" data-ride="carousel">
-				<div className="carousel-inner">
-					<div className="carousel-item active">
-						<h5 className="company">
-							A/B Testing to Decrease Website Cart Abandonment
-						</h5>
-						<h5 className="industry">Sporting Goods Retailer</h5>
-						<p>
-							Company experiencing higher than normal cart abandonment on the
-							web. Website had become cluttered and the shopping process was
-							unclear – customers didn’t know where or how to checkout. Haave
-							believed shopper processes and workflows were to blame and
-							performed web analytics to test and validate the assumption. An
-							alternative checkout process that was more clear and concise was
-							developed which proved the assumption to be correct. Improvement
-							of these web checkout processes resulted in mammoth change as
-							customers had more clarity on checkout – top line web revenues
-							were increased by $20M per year.
-						</p>
-					</div>
-					<div className="carousel-item">
+				<div className="carousel-inner" style={this.state}>
+					<div
+						className="carousel-item active"
+						ref={divElement => {
+							this.divElement = divElement;
+						}}
+					>
 						<h5 className="company">
 							Data Engineering to Improve Time to Market
 						</h5>
@@ -44,6 +61,24 @@ class Slides extends Component {
 							processes out to market more quickly – time to market was reduced
 							by 30% – resulting in a better customer experience as quality and
 							frequency of features were made available more quickly.
+						</p>
+					</div>
+					<div className="carousel-item">
+						<h5 className="company">
+							A/B Testing to Decrease Website Cart Abandonment
+						</h5>
+						<h5 className="industry">Sporting Goods Retailer</h5>
+						<p>
+							Company experiencing higher than normal cart abandonment on the
+							web. Website had become cluttered and the shopping process was
+							unclear – customers didn’t know where or how to checkout. Haave
+							believed shopper processes and workflows were to blame and
+							performed web analytics to test and validate the assumption. An
+							alternative checkout process that was more clear and concise was
+							developed which proved the assumption to be correct. Improvement
+							of these web checkout processes resulted in mammoth change as
+							customers had more clarity on checkout – top line web revenues
+							were increased by $20M per year.
 						</p>
 					</div>
 					<div className="carousel-item">
