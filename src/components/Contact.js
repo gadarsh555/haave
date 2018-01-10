@@ -20,11 +20,12 @@ class Contact extends Component {
 							Submit
 						</button>
 					</form>
+
 					<div className="map">
 						<iframe
 							frameBorder="0"
 							title="google map"
-							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB82gAD8C6O3UWiNwGcgPhCMTP9zNzS4D8&q=1644+Platte+St+%23400,+Denver,+CO+80202"
+							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDqqGc57PH0Gxmcx6vWppqS3G7O3ti4wqI&q=1644+Platte+St+%23400,+Denver,+CO+80202"
 						/>
 					</div>
 				</div>
@@ -32,5 +33,5 @@ class Contact extends Component {
 		);
 	}
 }
-// AIzaSyB82gAD8C6O3UWiNwGcgPhCMTP9zNzS4D8
+
 export default Contact;
