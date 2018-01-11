@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Nav from './components/Nav';
-import Services from './components/Services';
-import Articles from './components/Articles';
-import CaseStudy from './components/CaseStudy';
-import Slides from './components/Carousel';
-import Contact from './components/Contact';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -16,44 +12,7 @@ class App extends Component {
 				<div>
 					<Nav />
 				</div>
-				<header className="App-header">
-					<div className="Header-content">
-						<div className="Header-middle">
-							<h1>Intelligent Insights</h1>
-							<h1>Data-driven Decisions</h1>
-							<p>
-								Helping leaders solve complex problems using advanced machine
-								learning to generate revenue, reduce costs and move audiences.
-							</p>
-							<div>
-								<a href="#Services" className="button">
-									<button>Learn More</button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</header>
-				<div>
-					<div id="Services">
-						<Services />
-					</div>
-				</div>
-				<div>
-					<div id="Articles">
-						<Articles />
-					</div>
-				</div>
-				<div>
-					<div id="CaseStudy">
-						<CaseStudy />
-					</div>
-				</div>
-				<div>
-					<Slides />
-				</div>
-				<div id="Contact">
-					<Contact />
-				</div>
+				<Main />
 				<div id="Footer">
 					<Footer />
 				</div>
