@@ -36,6 +36,9 @@
 	border-radius: 0.25rem;
 	border: 0;
 }
+.invalid {
+	border: 1px solid red;
+}
 @media (max-width: 1000px) {
 	.map {
 		width: 100%;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Contact.css';
+// Form validation dependencies
 import isEmail from 'validator/lib/isEmail';
 import isEmpty from 'validator/lib/isEmpty';
 
@@ -11,7 +12,10 @@ class Contact extends Component {
 			company: '',
 			email: '',
 			phone: '',
-			message: ''
+			message: '',
+			nameClass: 'form-control',
+			emailClass: 'form-control',
+			messageClass: 'form-control'
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -41,26 +45,56 @@ class Contact extends Component {
 	}
 	handleSubmit(event) {
 		event.preventDefault();
-		fetch('http://localhost:8080/contact', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				name: this.state.name,
-				company: this.state.company,
-				email: this.state.email,
-				phone: this.state.phone,
-				message: this.state.message
-			})
-		});
-		this.setState({
-			name: '',
-			company: '',
-			email: '',
-			phone: '',
-			message: ''
-		});
+		// Test Validity of form
+		const nameValid = !isEmpty(this.state.name);
+		const emailValid = isEmail(this.state.email);
+		const messageValid = !isEmpty(this.state.message);
+		// Valid Form
+		if (nameValid && emailValid && messageValid) {
+			fetch('http://localhost:8080/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					name: this.state.name,
+					company: this.state.company,
+					email: this.state.email,
+					phone: this.state.phone,
+					message: this.state.message
+				})
+			});
+			this.setState({
+				name: '',
+				company: '',
+				email: '',
+				phone: '',
+				message: '',
+				nameClass: 'form-control',
+				emailClass: 'form-control',
+				messageClass: 'form-control'
+			});
+		} else {
+			// Invalid Form
+			if (!nameValid) {
+				this.setState({ nameClass: 'form-control invalid' });
+			}
+			if (!emailValid) {
+				this.setState({ emailClass: 'form-control invalid' });
+			}
+			if (!messageValid) {
+				this.setState({ messageClass: 'form-control invalid' });
+			}
+			if (nameValid) {
+				this.setState({ nameClass: 'form-control' });
+			}
+			if (emailValid) {
+				this.setState({ emailClass: 'form-control' });
+			}
+			if (messageValid) {
+				this.setState({ messageClass: 'form-control' });
+			}
+		}
 	}
 	render() {
 		return (
@@ -72,11 +106,10 @@ class Contact extends Component {
 				<div>
 					<form className="form" onSubmit={this.handleSubmit}>
 						<input
-							className="form-control"
+							className={this.state.nameClass}
 							placeholder="Name"
 							value={this.state.name}
 							onChange={this.handleChange}
-							required
 						/>
 						<input
 							className="form-control"
@@ -85,11 +118,10 @@ class Contact extends Component {
 							onChange={this.handleChange}
 						/>
 						<input
-							className="form-control"
+							className={this.state.emailClass}
 							placeholder="Email"
 							value={this.state.email}
 							onChange={this.handleChange}
-							required
 						/>
 						<input
 							className="form-control"
@@ -98,11 +130,10 @@ class Contact extends Component {
 							onChange={this.handleChange}
 						/>
 						<textarea
-							className="form-control"
+							className={this.state.messageClass}
 							placeholder="Message"
 							value={this.state.message}
 							onChange={this.handleChange}
-							required
 						/>
 						<button className="btn btn-primary" type="submit">
 							Submit
