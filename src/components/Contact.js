@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Contact.css';
+import isEmail from 'validator/lib/isEmail';
+import isEmpty from 'validator/lib/isEmpty';
 
 class Contact extends Component {
 	constructor(props) {
