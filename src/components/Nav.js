@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { HashLink } from 'react-router-hash-link';
 import '../styles/Nav.css';
 
 class Nav extends Component {
@@ -11,21 +12,26 @@ class Nav extends Component {
 	render() {
 		return (
 			<nav>
-				<img src={require('../img/haave.png')} alt="logo" />
+				<HashLink to={'/'}>
+					<img src={require('../img/haave.png')} alt="logo" />
+				</HashLink>
 				<div className="ul-container">
 					<ul className="horizontal">
-						<a href="#Services">
+						<HashLink to={'/#Services'}>
 							<li>Services</li>
-						</a>
-						<a href="#Articles">
+						</HashLink>
+						<HashLink to="/#Articles">
 							<li>News</li>
-						</a>
-						<a href="#CaseStudy">
+						</HashLink>
+						<HashLink to="/#CaseStudy">
 							<li>Case Studies</li>
-						</a>
-						<a href="#Contact">
+						</HashLink>
+						<HashLink to={'/healthcare'}>
+							<li>Healthcare</li>
+						</HashLink>
+						<HashLink to="/#Contact">
 							<li>Contact Us</li>
-						</a>
+						</HashLink>
 					</ul>
 				</div>
 				<div
