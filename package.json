@@ -9,8 +9,7 @@
 		"nodemailer": "^4.4.1",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
-		"validator": "^9.2.0",
-		"xoauth2": "^1.2.0"
+		"validator": "^9.2.0"
 	},
 	"devDependencies": {
 		"gh-pages": "^1.1.0",
