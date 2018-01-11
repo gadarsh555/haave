@@ -38,10 +38,10 @@ class Contact extends Component {
 		this.setState(change);
 	}
 	handleSubmit(event) {
+		event.preventDefault();
 		fetch('http://localhost:8080/contact', {
 			method: 'POST',
 			headers: {
-				// Accept: 'application/json',
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
@@ -52,7 +52,13 @@ class Contact extends Component {
 				message: this.state.message
 			})
 		});
-		event.preventDefault();
+		this.setState({
+			name: '',
+			company: '',
+			email: '',
+			phone: '',
+			message: ''
+		});
 	}
 	render() {
 		return (
@@ -68,6 +74,7 @@ class Contact extends Component {
 							placeholder="Name"
 							value={this.state.name}
 							onChange={this.handleChange}
+							required
 						/>
 						<input
 							className="form-control"
@@ -80,6 +87,7 @@ class Contact extends Component {
 							placeholder="Email"
 							value={this.state.email}
 							onChange={this.handleChange}
+							required
 						/>
 						<input
 							className="form-control"
@@ -92,6 +100,7 @@ class Contact extends Component {
 							placeholder="Message"
 							value={this.state.message}
 							onChange={this.handleChange}
+							required
 						/>
 						<button className="btn btn-primary" type="submit">
 							Submit

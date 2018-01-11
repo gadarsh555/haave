@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Email
 app.post('/contact', (req, res) => {
-	console.log(req.body);
 	let transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
