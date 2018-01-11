@@ -5,7 +5,6 @@ const path = require('path');
 const app = express();
 const keys = require('./config/keys');
 const nodemailer = require('nodemailer');
-// const xoauth2 = require('xoauth2');
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Parsers
@@ -17,8 +16,8 @@ app.post('/contact', (req, res) => {
 	let transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
-			user: key.email,
-			pass: key.pass
+			user: keys.email,
+			pass: keys.pass
 		}
 	});
 	const mailOptions = {
