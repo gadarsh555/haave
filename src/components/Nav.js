@@ -26,9 +26,6 @@ class Nav extends Component {
 						<a href="#Contact">
 							<li>Contact Us</li>
 						</a>
-						<a href="#">
-							<li>Start a Project</li>
-						</a>
 					</ul>
 				</div>
 				<div
@@ -52,9 +49,6 @@ class Nav extends Component {
 							</li>
 							<li>
 								<a href="#Contact">Contact Us</a>
-							</li>
-							<li>
-								<a href="#">Start a Project</a>
 							</li>
 						</ul>
 					</div>
