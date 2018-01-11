@@ -5,7 +5,7 @@ class Healthcare extends Component {
 	render() {
 		return (
 			<div id="healthcare-container">
-				<p />
+				<p>Healthcare page</p>
 			</div>
 		);
 	}

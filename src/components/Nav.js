@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Nav.css';
 
 class Nav extends Component {
@@ -23,6 +24,9 @@ class Nav extends Component {
 						<a href="#CaseStudy">
 							<li>Case Studies</li>
 						</a>
+						{/* <Link to={'/healthcare'}>
+							<li>Healthcare</li>
+						</Link> */}
 						<a href="#Contact">
 							<li>Contact Us</li>
 						</a>
