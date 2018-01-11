@@ -34,8 +34,10 @@ app.post('/contact', (req, res) => {
 	transporter.sendMail(mailOptions, (err, info) => {
 		if (err) {
 			console.log(err);
+			res.sendStatus(500);
 		} else {
 			console.log(info);
+			res.sendStatus(200);
 		}
 	});
 });
