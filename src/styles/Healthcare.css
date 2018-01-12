@@ -1,3 +1,6 @@
+#healthcare-title {
+	padding-top: 60px;
+}
 #healthcare-title img,
 #healthcare-title h3 {
 	display: inline-block;
@@ -16,9 +19,18 @@
 	margin-top: 18px;
 }
 .healthcare-description {
-	padding: 60px 0;
+	padding: 1rem 0 60px 0;
 }
 .healthcare-description h5 {
 	line-height: 1.75rem;
 	color: #00306e;
+	margin-bottom: 1rem;
+}
+.healthcare-description p {
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+.healthcare-description h6 {
+	color: #00adef;
+	margin-bottom: 0.5rem;
 }
