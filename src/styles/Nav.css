@@ -77,7 +77,6 @@ a {
 	text-align: center;
 	width: 0;
 	transition: width 0.2s ease-in-out;
-	height: 356px;
 	overflow: hidden;
 }
 .change .vi-container {
@@ -95,21 +94,20 @@ a {
 .vertical li {
 	text-decoration: none !important;
 	border-bottom: 1px solid #ebebeb;
-	padding: 0;
 	transition: background-color 0.1s ease-in-out;
+	height: 80px;
 }
 .vertical a {
 	color: #4a4a4a;
 	font-size: 1rem;
 	letter-spacing: 0.02em;
-	padding-top: 8px;
-	line-height: 70px;
 	box-sizing: border-box;
-	height: 80px;
+	display: block;
+	line-height: 80px;
 }
 /* ======= Responsive Design ======== */
 /* 700px */
-@media (max-width: 740px) {
+@media (max-width: 760px) {
 	#ham-container {
 		display: inline-block;
 	}

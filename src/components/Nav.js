@@ -20,16 +20,16 @@ class Nav extends Component {
 						<HashLink to={'/#Services'}>
 							<li>Services</li>
 						</HashLink>
-						<HashLink to="/#Articles">
+						<HashLink to={'/#Articles'}>
 							<li>News</li>
 						</HashLink>
-						<HashLink to="/#CaseStudy">
+						<HashLink to={'/#CaseStudy'}>
 							<li>Case Studies</li>
 						</HashLink>
 						<HashLink to={'/healthcare'}>
 							<li>Healthcare</li>
 						</HashLink>
-						<HashLink to="/#Contact">
+						<HashLink to={'/#Contact'}>
 							<li>Contact Us</li>
 						</HashLink>
 					</ul>
@@ -45,16 +45,19 @@ class Nav extends Component {
 					<div className="vi-container">
 						<ul className="vertical">
 							<li>
-								<a href="#Services">Services</a>
+								<HashLink to={'/#Services'}>Services</HashLink>
 							</li>
 							<li>
-								<a href="#Articles">News</a>
+								<HashLink to={'/#Articles'}>News</HashLink>
 							</li>
 							<li>
-								<a href="#CaseStudy">Case Studies</a>
+								<HashLink to={'/#CaseStudy'}>Case Studies</HashLink>
 							</li>
 							<li>
-								<a href="#Contact">Contact Us</a>
+								<HashLink to={'/healthcare'}>Healthcare</HashLink>
+							</li>
+							<li>
+								<HashLink to={'/#Contact'}>Contact Us</HashLink>
 							</li>
 						</ul>
 					</div>

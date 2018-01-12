@@ -5,7 +5,20 @@ class Healthcare extends Component {
 	render() {
 		return (
 			<div id="healthcare-container">
-				<p>Healthcare page</p>
+				<div id="healthcare-title">
+					<img src={require('../img/health.png')} />
+					<h3>Healthcare</h3>
+					<hr />
+				</div>
+				<div className="healthcare-description">
+					<h5>
+						The healthcare landscape is evolving at the most rapid pace in
+						history, and it‘s a challenge to keep pace. Historically, healthcare
+						organizations have functioned without the benefit of deep data
+						analytics guiding the way. That has now changed – Haave can lead you
+						to the forefront of healthcare analytics.
+					</h5>
+				</div>
 			</div>
 		);
 	}
