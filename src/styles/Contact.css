@@ -1,7 +1,11 @@
 #Contact {
-	background-color: #00adef;
+	margin-top: -80px;
+	padding-top: 80px;
+}
+#contact-container {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background-color: #00adef;
 }
 #Contact h3 {
 	color: #fff;

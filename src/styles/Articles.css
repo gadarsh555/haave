@@ -1,6 +1,11 @@
+#Articles {
+	margin-top: -80px;
+	padding-top: 80px;
+}
 #article-container {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background-color: #eff3f7;
 }
 #article-container h3 {
 	margin-top: 0;

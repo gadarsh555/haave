@@ -28,26 +28,22 @@ class Main extends Component {
 						</div>
 					</div>
 				</header>
-				<div>
-					<div id="Services">
-						<Services />
-					</div>
+				<div id="Services">
+					<Services />
 				</div>
-				<div>
-					<div id="Articles">
-						<Articles />
-					</div>
+				<div id="Articles">
+					<Articles />
 				</div>
-				<div>
-					<div id="CaseStudy">
-						<CaseStudy />
-					</div>
+				<div id="CaseStudy">
+					<CaseStudy />
 				</div>
 				<div>
 					<Slides />
 				</div>
-				<div id="Contact">
-					<Contact />
+				<div id="contact-nav">
+					<div id="Contact">
+						<Contact />
+					</div>
 				</div>
 			</div>
 		);

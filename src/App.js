@@ -16,8 +16,9 @@ class App extends Component {
 						<Nav />
 					</div>
 					<Switch>
-						<Route exact path="/" component={Main} />
-						<Route path="/healthcare" component={Healthcare} />
+						{/* <Route exact path="/" component={Main} /> */}
+						<Route exact path="/haave" component={Main} />
+						<Route path="/haave/healthcare" component={Healthcare} />
 					</Switch>
 					<div id="Footer">
 						<Footer />

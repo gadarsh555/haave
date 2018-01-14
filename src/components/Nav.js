@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import '../styles/Nav.css';
 
@@ -12,24 +13,24 @@ class Nav extends Component {
 	render() {
 		return (
 			<nav>
-				<HashLink to={'/'}>
+				<Link to={'/haave'}>
 					<img src={require('../img/haave.png')} alt="logo" />
-				</HashLink>
+				</Link>
 				<div className="ul-container">
 					<ul className="horizontal">
-						<HashLink to={'/#Services'}>
+						<HashLink to={'/haave/#Services'}>
 							<li>Services</li>
 						</HashLink>
-						<HashLink to={'/#Articles'}>
+						<HashLink to={'/haave/#Articles'}>
 							<li>News</li>
 						</HashLink>
-						<HashLink to={'/#CaseStudy'}>
+						<HashLink to={'/haave/#CaseStudy'}>
 							<li>Case Studies</li>
 						</HashLink>
-						<HashLink to={'/healthcare'}>
+						<Link to={'/haave/healthcare'}>
 							<li>Healthcare</li>
-						</HashLink>
-						<HashLink to={'/#Contact'}>
+						</Link>
+						<HashLink to={'/haave/#Contact'}>
 							<li>Contact Us</li>
 						</HashLink>
 					</ul>
@@ -45,19 +46,19 @@ class Nav extends Component {
 					<div className="vi-container">
 						<ul className="vertical">
 							<li>
-								<HashLink to={'/#Services'}>Services</HashLink>
+								<HashLink to={'/haave/#Services'}>Services</HashLink>
 							</li>
 							<li>
-								<HashLink to={'/#Articles'}>News</HashLink>
+								<HashLink to={'/haave/#Articles'}>News</HashLink>
 							</li>
 							<li>
-								<HashLink to={'/#CaseStudy'}>Case Studies</HashLink>
+								<HashLink to={'/haave/#CaseStudy'}>Case Studies</HashLink>
 							</li>
 							<li>
-								<HashLink to={'/healthcare'}>Healthcare</HashLink>
+								<HashLink to={'/haave/healthcare'}>Healthcare</HashLink>
 							</li>
 							<li>
-								<HashLink to={'/#Contact'}>Contact Us</HashLink>
+								<HashLink to={'/haave/#Contact'}>Contact Us</HashLink>
 							</li>
 						</ul>
 					</div>

@@ -6,7 +6,7 @@ class Healthcare extends Component {
 		return (
 			<div id="healthcare-container">
 				<div id="healthcare-title">
-					<img src={require('../img/health.png')} />
+					<img src={require('../img/health.png')} alt="health.png" />
 					<h3>Healthcare</h3>
 					<hr />
 				</div>
