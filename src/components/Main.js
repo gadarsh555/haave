@@ -8,6 +8,9 @@ import Slides from './Carousel';
 import Contact from './Contact';
 
 class Main extends Component {
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 	render() {
 		return (
 			<div id="main-container">

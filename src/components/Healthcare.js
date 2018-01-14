@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import '../styles/Healthcare.css';
 
 class Healthcare extends Component {
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 	render() {
 		return (
 			<div id="healthcare-container" className="animated fadeInUp">
