@@ -4,7 +4,7 @@ import '../styles/Healthcare.css';
 class Healthcare extends Component {
 	render() {
 		return (
-			<div id="healthcare-container">
+			<div id="healthcare-container" className="animated fadeInUp">
 				<div id="healthcare-title">
 					<img src={require('../img/health.png')} alt="health.png" />
 					<h3>Healthcare</h3>
