@@ -20,6 +20,12 @@
 }
 #Contact button {
 	background-color: #00306e;
+	font-size: 1rem;
+}
+#Contact button:hover {
+	/* background-color: #4360b5; */
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid #fff;
 }
 .form {
 	width: calc(50% - 15px);
