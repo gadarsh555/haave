@@ -18,21 +18,15 @@ class Nav extends Component {
 				</Link>
 				<div className="ul-container">
 					<ul className="horizontal">
-						<HashLink to={'/haave/#Services'}>
-							<li>Services</li>
-						</HashLink>
-						<HashLink to={'/haave/#Articles'}>
-							<li>News</li>
-						</HashLink>
-						<HashLink to={'/haave/#CaseStudy'}>
-							<li>Case Studies</li>
-						</HashLink>
 						<Link to={'/haave/healthcare'}>
 							<li>Healthcare</li>
 						</Link>
-						<HashLink to={'/haave/#Contact'}>
-							<li>Contact Us</li>
-						</HashLink>
+						<Link to={'/haave/legal'}>
+							<li>Legal</li>
+						</Link>
+						<Link to={'/haave/marketing'}>
+							<li>Marketing</li>
+						</Link>
 					</ul>
 				</div>
 				<div
@@ -46,19 +40,13 @@ class Nav extends Component {
 					<div className="vi-container">
 						<ul className="vertical">
 							<li>
-								<HashLink to={'/haave/#Services'}>Services</HashLink>
+								<Link to={'/haave/healthcare'}>Healthcare</Link>
 							</li>
 							<li>
-								<HashLink to={'/haave/#Articles'}>News</HashLink>
+								<Link to={'/haave/legal'}>Legal</Link>
 							</li>
 							<li>
-								<HashLink to={'/haave/#CaseStudy'}>Case Studies</HashLink>
-							</li>
-							<li>
-								<HashLink to={'/haave/healthcare'}>Healthcare</HashLink>
-							</li>
-							<li>
-								<HashLink to={'/haave/#Contact'}>Contact Us</HashLink>
+								<Link to={'/haave/marketing'}>Marketing</Link>
 							</li>
 						</ul>
 					</div>

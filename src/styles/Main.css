@@ -1,21 +1,11 @@
 .App-header {
 	height: calc(100vh - 80px);
-	min-height: 350px;
+	/* min-height: 350px; */
 	padding: 20px;
 	color: white;
 	background-image: url('../img/header.jpg');
 	background-size: cover;
 }
-.Header-content {
-	display: table;
-	height: 100%;
-}
-.Header-middle {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-}
-
 .Header-content,
 #Services,
 #article-container,
@@ -24,35 +14,6 @@
 #healthcare-container {
 	text-align: left;
 	padding: 0 25%;
-}
-.Header-content h1 {
-	font-size: 4rem;
-	/* font-family: 'Helvetica Neue Thin'; */
-}
-.Header-content p {
-	margin: 50px 0;
-	line-height: 30px;
-	font-size: 1.5rem;
-}
-.button {
-	padding: 0;
-}
-
-.button button {
-	text-align: center;
-	background-color: rgba(0, 0, 0, 0);
-	color: #fff;
-	font-size: 1em;
-	cursor: pointer;
-	border: 2px solid;
-	border-radius: 5px;
-	margin-top: 2px;
-	transition: 0.2s ease-in-out;
-}
-.button button:hover {
-	font-size: 1.05em;
-	background-color: rgba(0, 0, 0, 0.1);
-	transition: 0.2s ease-in-out;
 }
 span {
 	float: right;
@@ -85,23 +46,5 @@ span {
 	#contact-container,
 	#healthcare-container {
 		padding: 0 5%;
-	}
-}
-@media (max-width: 600px) {
-	.Header-content h1 {
-		font-size: 2em;
-	}
-	.Header-content p {
-		margin: 25px 0;
-	}
-}
-@media (max-width: 500px) {
-	.Header-content h1 {
-		font-size: 1.8em;
-	}
-}
-@media (max-width: 400px) {
-	.Header-content h1 {
-		font-size: 1.6em;
 	}
 }

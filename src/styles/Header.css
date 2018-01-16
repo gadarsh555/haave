@@ -1,0 +1,58 @@
+.Header-content {
+	display: table;
+	height: 100%;
+}
+.Header-middle {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.Header-content h1 {
+	font-size: 3.5rem;
+}
+.Header-content p {
+	margin: 50px 0 0 0;
+	line-height: 30px;
+	font-size: 1.25rem;
+}
+@media (max-width: 990px) {
+	.Header-content h1 {
+		font-size: 3.25rem;
+	}
+}
+@media (max-width: 920px) {
+	.Header-content h1 {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 600px) {
+	.Header-content h1 {
+		font-size: 2.75rem;
+	}
+	.Header-content p {
+		margin: 25px 0;
+	}
+}
+@media (max-width: 540px) {
+	.Header-content h1 {
+		font-size: 2.5rem;
+	}
+}
+@media (max-width: 495px) {
+	.Header-content h1 {
+		font-size: 2.25rem;
+	}
+}
+@media (max-width: 450px) {
+	.Header-content h1 {
+		font-size: 2rem;
+	}
+	.Header-content p {
+		font-size: 1rem;
+	}
+}
+@media (max-width: 403px) {
+	.Header-content h1 {
+		font-size: 1.8rem;
+	}
+}
