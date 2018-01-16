@@ -11,26 +11,29 @@
 	height: 75px;
 }
 #healthcare-title h3 {
-	height: 25px;
-	margin: 25px;
+	height: 45px;
+	margin: 15px;
+	font-size: 2.5rem;
 }
 #healthcare-title hr {
 	margin-bottom: 0;
 	margin-top: 18px;
 }
 .healthcare-description {
-	padding: 1rem 0 60px 0;
+	padding: 30px 0 60px 0;
 }
 .healthcare-description h5 {
-	line-height: 1.75rem;
+	line-height: 2rem;
 	color: #00306e;
 	margin-bottom: 1rem;
+	font-weight: bolder;
 }
 .healthcare-description p {
 	margin-bottom: 1rem;
-	line-height: 1.5;
+	line-height: 1.75rem;
 }
 .healthcare-description h6 {
 	color: #00adef;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
+	font-weight: bolder;
 }

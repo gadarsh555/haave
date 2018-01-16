@@ -24,7 +24,9 @@ img {
 	margin: 0;
 	height: 100%;
 }
-
+.horizontal li {
+	font-weight: 800;
+}
 .horizontal a {
 	display: table-cell;
 	vertical-align: middle;
@@ -110,6 +112,7 @@ nav a {
 	box-sizing: border-box;
 	display: block;
 	line-height: 80px;
+	font-weight: 800;
 }
 /* ======= Responsive Design ======== */
 /* 700px */
