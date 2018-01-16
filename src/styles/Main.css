@@ -11,7 +11,8 @@
 #article-container,
 #CaseStudy,
 #contact-container,
-#healthcare-container {
+#healthcare-container,
+#Legal {
 	text-align: left;
 	padding: 0 25%;
 }
@@ -24,7 +25,8 @@ span {
 	#article-container,
 	#CaseStudy,
 	#contact-container,
-	#healthcare-container {
+	#healthcare-container,
+	#Legal {
 		padding: 0 20%;
 	}
 }
@@ -34,7 +36,8 @@ span {
 	#article-container,
 	#CaseStudy,
 	#contact-container,
-	#healthcare-container {
+	#healthcare-container,
+	#Legal {
 		padding: 0 10%;
 	}
 }
@@ -44,7 +47,8 @@ span {
 	#article-container,
 	#CaseStudy,
 	#contact-container,
-	#healthcare-container {
+	#healthcare-container,
+	#Legal {
 		padding: 0 5%;
 	}
 }

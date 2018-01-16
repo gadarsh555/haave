@@ -6,6 +6,7 @@ import 'animate.css/animate.min.css';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Healthcare from './components/Healthcare';
+import Legal from './components/Legal';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
 						{/* <Route exact path="/" component={Main} /> */}
 						<Route exact path="/haave" component={Main} />
 						<Route path="/haave/healthcare" component={Healthcare} />
+						<Route path="/haave/legal" component={Legal} />
 					</Switch>
 					<div id="Footer">
 						<Footer />

@@ -1,5 +1,6 @@
 #healthcare-title {
 	padding-top: 60px;
+	text-align: center;
 }
 #healthcare-title img,
 #healthcare-title h3 {
@@ -12,7 +13,7 @@
 }
 #healthcare-title h3 {
 	height: 45px;
-	margin: 15px;
+	margin: 15px 90px 15px 15px;
 	font-size: 2.5rem;
 }
 #healthcare-title hr {
