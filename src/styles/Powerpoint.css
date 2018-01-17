@@ -1,0 +1,15 @@
+.powerpoint iframe {
+	margin-top: 60px;
+	margin-bottom: 1rem;
+	max-width: 800px;
+}
+@media (max-width: 1000px) {
+	.powerpoint iframe {
+		height: 400px;
+	}
+}
+@media (max-width: 500px) {
+	.powerpoint iframe {
+		height: 300px;
+	}
+}

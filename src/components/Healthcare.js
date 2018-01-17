@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Healthcare.css';
+import '../styles/Powerpoint.css';
 
 class Healthcare extends Component {
 	componentDidMount() {
@@ -123,15 +124,17 @@ class Healthcare extends Component {
 						staffing to support both your immediate and long-term staffing and
 						project needs.
 					</p>
-					<iframe
-						src="https://docs.google.com/presentation/d/e/2PACX-1vQCXcsirjzc0TgHrWyT1Nnapyii7Qp8PGIW7cTSxUN_aKI7TTFVW3wfDm6a31tLOUgOFshGa3LFNj92/embed?start=false&loop=false&delayms=3000"
-						frameborder="0"
-						width="100%"
-						height="500"
-						allowfullscreen="true"
-						mozallowfullscreen="true"
-						webkitallowfullscreen="true"
-					/>
+					<div className="powerpoint">
+						<iframe
+							src="https://docs.google.com/presentation/d/e/2PACX-1vQCXcsirjzc0TgHrWyT1Nnapyii7Qp8PGIW7cTSxUN_aKI7TTFVW3wfDm6a31tLOUgOFshGa3LFNj92/embed?start=false&loop=false&delayms=3000"
+							frameborder="0"
+							width="100%"
+							height="500"
+							allowfullscreen="true"
+							mozallowfullscreen="true"
+							webkitallowfullscreen="true"
+						/>
+					</div>
 				</div>
 			</div>
 		);

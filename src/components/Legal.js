@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Legal.css';
+import '../styles/Powerpoint.css';
 
 class Legal extends Component {
 	componentDidMount() {
@@ -62,15 +63,17 @@ class Legal extends Component {
 						placing these extraordinary new technologies in your hands and
 						seeing where they lead you.
 					</p>
-					<iframe
-						src="https://docs.google.com/presentation/d/e/2PACX-1vTxRXZnehNMNBrExtSXJSU7Mz_oMC6n_-lIQR1bPkxkzlkuXwy6F3pJqeOqA6NuogmuaFcBUkU_R6IW/embed?start=false&loop=false&delayms=3000"
-						frameborder="0"
-						width="100%"
-						height="500"
-						allowfullscreen="true"
-						mozallowfullscreen="true"
-						webkitallowfullscreen="true"
-					/>
+					<div className="powerpoint">
+						<iframe
+							src="https://docs.google.com/presentation/d/e/2PACX-1vTxRXZnehNMNBrExtSXJSU7Mz_oMC6n_-lIQR1bPkxkzlkuXwy6F3pJqeOqA6NuogmuaFcBUkU_R6IW/embed?start=false&loop=false&delayms=3000"
+							frameborder="0"
+							width="100%"
+							height="500"
+							allowfullscreen="true"
+							mozallowfullscreen="true"
+							webkitallowfullscreen="true"
+						/>
+					</div>
 				</div>
 			</div>
 		);
