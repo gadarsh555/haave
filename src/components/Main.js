@@ -36,11 +36,9 @@ class Main extends Component {
 				<div>
 					<Slides />
 				</div>
-				<div id="contact-nav">
-					<div id="Contact">
-						<Contact />
-					</div>
-				</div>
+				{/* <div id="Contact">
+					<Contact />
+				</div> */}
 			</div>
 		);
 	}

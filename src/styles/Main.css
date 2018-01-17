@@ -7,7 +7,7 @@
 	overflow: hidden;
 }
 .video-background {
-	object-fit: cover;
+	object-fit: fill;
 	position: absolute;
 	z-index: -1;
 	width: 100%;
@@ -25,9 +25,6 @@
 	text-align: left;
 	padding: 0 25%;
 }
-span {
-	float: right;
-}
 @media (max-width: 1450px) {
 	.Header-content,
 	#Services,
@@ -37,6 +34,11 @@ span {
 	#healthcare-container,
 	#Legal {
 		padding: 0 20%;
+	}
+}
+@media (max-width: 1200px) {
+	.video-background {
+		object-fit: cover;
 	}
 }
 @media (max-width: 900px) {
