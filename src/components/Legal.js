@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import '../styles/Legal.css';
 
 class Legal extends Component {
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 	render() {
 		return (
 			<div id="Legal" className="animated fadeInUp">
 				<div id="legal-title">
 					<img src={require('../img/circle.png')} alt="circle.png" />
-					<h3>Legal</h3>
+					<h3>Advanced NLP for Predictive Coding</h3>
 					<hr />
 				</div>
 				<div className="legal-description">
@@ -59,6 +62,15 @@ class Legal extends Component {
 						placing these extraordinary new technologies in your hands and
 						seeing where they lead you.
 					</p>
+					<iframe
+						src="https://docs.google.com/presentation/d/e/2PACX-1vTxRXZnehNMNBrExtSXJSU7Mz_oMC6n_-lIQR1bPkxkzlkuXwy6F3pJqeOqA6NuogmuaFcBUkU_R6IW/embed?start=false&loop=false&delayms=3000"
+						frameborder="0"
+						width="100%"
+						height="500"
+						allowfullscreen="true"
+						mozallowfullscreen="true"
+						webkitallowfullscreen="true"
+					/>
 				</div>
 			</div>
 		);
