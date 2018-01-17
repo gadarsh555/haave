@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Healthcare.css';
+import '../styles/Marketing.css';
 import '../styles/Powerpoint.css';
 
 class Marketing extends Component {
@@ -14,7 +15,7 @@ class Marketing extends Component {
 					<h3>Marketing</h3>
 					<hr />
 				</div>
-				<div className="healthcare-description">
+				<div className="marketing-description">
 					<div className="powerpoint">
 						<iframe
 							src="https://docs.google.com/presentation/d/e/2PACX-1vQCXcsirjzc0TgHrWyT1Nnapyii7Qp8PGIW7cTSxUN_aKI7TTFVW3wfDm6a31tLOUgOFshGa3LFNj92/embed?start=false&loop=false&delayms=3000"
