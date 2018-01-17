@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 import Main from './components/Main';
 import Healthcare from './components/Healthcare';
 import Legal from './components/Legal';
+import Marketing from './components/Marketing';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
 						<Route exact path="/haave" component={Main} />
 						<Route path="/haave/healthcare" component={Healthcare} />
 						<Route path="/haave/legal" component={Legal} />
+						<Route path="/haave/marketing" component={Marketing} />
 					</Switch>
 					<div id="Footer">
 						<Footer />
