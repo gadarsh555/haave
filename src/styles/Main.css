@@ -1,10 +1,19 @@
 .App-header {
 	height: calc(100vh - 80px);
-	/* min-height: 350px; */
 	padding: 20px;
 	color: white;
-	background-image: url('../img/header.jpg');
 	background-size: cover;
+	/* background-image: url('../img/header.jpg'); */
+	overflow: hidden;
+}
+.video-background {
+	object-fit: cover;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
 }
 .Header-content,
 #Services,

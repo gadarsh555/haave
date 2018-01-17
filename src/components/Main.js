@@ -16,6 +16,12 @@ class Main extends Component {
 		return (
 			<div id="main-container">
 				<header className="App-header">
+					<video
+						className="video-background"
+						src={require('../img/motionBackground.mp4')}
+						autoPlay
+						loop
+					/>
 					<Header />
 				</header>
 				<div id="Services">
