@@ -110,14 +110,14 @@ function parseSlackText(strRaw) {
 	var strDate = strRaw.split('Publication Date:')[1];
 	strDate = strDate.trim();
 
-	var strResult = `{
-    "title": "${strTitle}",
-    "img": "${strImg}",
-    "url": "${strURL}",
-    "pubDate": "${strDate}"
-  }`;
+	var strResult = {
+		title: strTitle,
+		img: strImg,
+		url: strURL,
+		pubDate: strDate
+	};
 
-	return JSON.parse(strResult);
+	return strResult;
 }
 /* ============== End Parse =========== */
 
