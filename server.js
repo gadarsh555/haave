@@ -7,12 +7,13 @@ const keys = require('./config/keys');
 const nodemailer = require('nodemailer');
 const Connection = require('tedious').Connection;
 const Request = require('tedious').Request;
+const cors = require('cors');
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Parsers
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(cors());
 // Email
 app.post('/contact', (req, res) => {
 	let transporter = nodemailer.createTransport({
@@ -71,7 +72,7 @@ app.get('/db', (req, res) => {
 			rowCount,
 			rows
 		) {
-			console.log(rowCount + ' row(s) returned');
+			console.log(output);
 			res.send(output);
 			// process.exit();
 		});
@@ -125,18 +126,18 @@ app.get('*', (req, res) => {
 });
 
 // Send all other requests to the React App
-app.use((req, res, next) => {
-	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.setHeader(
-		'Access-Control-Allow-Headers',
-		'Origin, X-Requested-With, Content-Type, Accept'
-	);
-	res.setHeader(
-		'Access-Control-Allow-Methods',
-		'POST, GET, PATCH, DELETE, OPTIONS'
-	);
-	next();
-});
+// app.use((req, res, next) => {
+// 	res.setHeader('Access-Control-Allow-Origin', '*');
+// 	res.setHeader(
+// 		'Access-Control-Allow-Headers',
+// 		'Origin, X-Requested-With, Content-Type, Accept'
+// 	);
+// 	res.setHeader(
+// 		'Access-Control-Allow-Methods',
+// 		'POST, GET, PATCH, DELETE, OPTIONS'
+// 	);
+// 	next();
+// });
 
 //Set Port
 const port = process.env.PORT || '8080';

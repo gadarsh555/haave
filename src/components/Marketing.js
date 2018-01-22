@@ -25,6 +25,7 @@ class Marketing extends Component {
 							allowFullScreen="true"
 							mozallowfullscreen="true"
 							webkitallowfullscreen="true"
+							title="marketing"
 						/>
 					</div>
 				</div>

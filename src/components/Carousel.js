@@ -14,7 +14,7 @@ class Slides extends Component {
 			const heightPx = height.toString() + 'px';
 			if (heightPx !== this.state.height) {
 				if (height !== this.state.height) {
-					console.log(this.divElement);
+					// console.log(this.divElement);
 					this.setState({
 						height: heightPx
 					});

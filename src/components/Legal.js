@@ -72,6 +72,7 @@ class Legal extends Component {
 							allowFullScreen="true"
 							mozallowfullscreen="true"
 							webkitallowfullscreen="true"
+							title="legal"
 						/>
 					</div>
 				</div>

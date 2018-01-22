@@ -6,7 +6,7 @@ import Services from './Services';
 import Articles from './Articles';
 import CaseStudy from './CaseStudy';
 import Slides from './Carousel';
-import Contact from './Contact';
+// import Contact from './Contact';
 
 class Main extends Component {
 	componentDidMount() {
