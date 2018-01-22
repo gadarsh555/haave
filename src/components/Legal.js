@@ -66,10 +66,10 @@ class Legal extends Component {
 					<div className="powerpoint">
 						<iframe
 							src="https://docs.google.com/presentation/d/e/2PACX-1vTxRXZnehNMNBrExtSXJSU7Mz_oMC6n_-lIQR1bPkxkzlkuXwy6F3pJqeOqA6NuogmuaFcBUkU_R6IW/embed?start=false&loop=false&delayms=3000"
-							frameborder="0"
+							frameBorder="0"
 							width="100%"
 							height="500"
-							allowfullscreen="true"
+							allowFullScreen="true"
 							mozallowfullscreen="true"
 							webkitallowfullscreen="true"
 						/>
