@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import '../styles/Nav.css';
 
 class Nav extends Component {

@@ -9,22 +9,20 @@ class Slides extends Component {
 		};
 	}
 	setHeight() {
-		const firstItem = document.getElementById('first-item');
-		firstItem.style.display = 'block';
-		const maxHeight = firstItem.clientHeight;
-		firstItem.style.display = '';
-		const items = document.getElementsByClassName('carousel-item');
-		const activeItem = document.getElementsByClassName('active');
-		if (maxHeight-activeItem[0].clientHeight === 0) {
+		
 
+		const items = document.getElementsByClassName('carousel-item');
+		if (window.innerWidth > 650) {
 			for(let i=0; i<items.length; i++) {
-				items[i].style.height = maxHeight + 'px';
+				items[i].style.height = 325 + 'px';
 			}
 		} else {
-			for(let i=0; i<items.length; i++) {
-				items[i].style.height = maxHeight-activeItem[0].clientHeight + 'px';
+			for (let i=0; i<items.length; i++) {
+				items[i].style.height = 400 + 'px';
 			}
 		}
+
+
 	}
 	getHeight() {
 		console.log('div', this.divElement);
