@@ -3,6 +3,7 @@
 	text-align: left;
 	margin-right: 20px;
 	width: calc(33.3333% - 13.3333px);
+	vertical-align: top;
 }
 .Template:last-of-type {
 	margin-right: 0;

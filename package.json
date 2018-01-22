@@ -6,14 +6,15 @@
 	"dependencies": {
 		"animate.css": "^3.5.2",
 		"async": "^2.6.0",
+		"axios": "^0.17.1",
 		"body-parser": "^1.18.2",
+		"cors": "^2.8.4",
 		"express": "^4.16.2",
 		"nodemailer": "^4.4.1",
 		"react": "^16.2.0",
 		"react-animate-on-scroll": "^1.6.0",
 		"react-dom": "^16.2.0",
 		"react-router-dom": "^4.2.2",
-		"react-router-hash-link": "^1.1.1",
 		"tedious": "^2.2.3",
 		"validator": "^9.2.0"
 	},

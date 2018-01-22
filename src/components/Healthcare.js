@@ -133,6 +133,7 @@ class Healthcare extends Component {
 							allowFullScreen="true"
 							mozallowfullscreen="true"
 							webkitallowfullscreen="true"
+							title="health"
 						/>
 					</div>
 				</div>
