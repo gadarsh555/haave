@@ -5,6 +5,8 @@ const path = require('path');
 const app = express();
 const keys = require('./config/keys');
 const nodemailer = require('nodemailer');
+const Connection = require('tedious').Connection;
+const Request = require('tedious').Request;
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Parsers
@@ -40,6 +42,52 @@ app.post('/contact', (req, res) => {
 		}
 	});
 });
+
+/* ===================== SQL ===================== */
+app.get('/db', (req, res) => {
+	const config = {
+		userName: keys.sqlUser,
+		password: keys.sqlPass,
+		server: 'haavedbserver.database.windows.net',
+		options: {
+			database: 'haavedb',
+			encrypt: true
+		}
+	};
+	const connection = new Connection(config);
+	// Attempt to connect and execute queries if connection goes through
+	connection.on('connect', function(err) {
+		if (err) {
+			console.log(err);
+		} else {
+			queryDatabase();
+		}
+	});
+	function queryDatabase() {
+		let output = [];
+		// Read all rows from table
+		request = new Request('SELECT * FROM dbo.Articles', function(
+			err,
+			rowCount,
+			rows
+		) {
+			console.log(rowCount + ' row(s) returned');
+			res.send(output);
+			// process.exit();
+		});
+
+		request.on('row', function(columns) {
+			columns.forEach(function(column) {
+				console.log(column);
+				if (column.metadata.colName === 'SlackText') {
+					output.push({ value: column.value });
+				}
+			});
+		});
+		connection.execSql(request);
+	}
+});
+/* ============= End SQL =========== */
 
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));

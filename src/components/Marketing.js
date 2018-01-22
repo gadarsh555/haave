@@ -19,10 +19,10 @@ class Marketing extends Component {
 					<div className="powerpoint">
 						<iframe
 							src="https://docs.google.com/presentation/d/e/2PACX-1vQCXcsirjzc0TgHrWyT1Nnapyii7Qp8PGIW7cTSxUN_aKI7TTFVW3wfDm6a31tLOUgOFshGa3LFNj92/embed?start=false&loop=false&delayms=3000"
-							frameborder="0"
+							frameBorder="0"
 							width="100%"
 							height="500"
-							allowfullscreen="true"
+							allowFullScreen="true"
 							mozallowfullscreen="true"
 							webkitallowfullscreen="true"
 						/>
