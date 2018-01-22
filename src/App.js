@@ -11,12 +11,23 @@ import Marketing from './components/Marketing';
 import Footer from './components/Footer';
 
 class App extends Component {
+	state = {
+		iframeFullScreen: false
+	};
+	componentDidMount() {
+		document.addEventListener("webkitfullscreenchange", this.toggleFullScreen.bind(this));
+		document.addEventListener("mozfullscreenchange", this.toggleFullScreen.bind(this));
+	}
+	toggleFullScreen() {
+		this.setState({ iframeFullScreen: !this.state.iframeFullScreen });
+	}
 	render() {
+		const { iframeFullScreen } = this.state;
 		return (
 			<BrowserRouter>
 				<div className="App">
 					<div>
-						<Nav />
+						<Nav iframeFullScreen={iframeFullScreen} />
 					</div>
 					<Switch>
 						{/* <Route exact path="/" component={Main} /> */}

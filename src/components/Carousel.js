@@ -9,16 +9,20 @@ class Slides extends Component {
 		};
 	}
 	setHeight() {
-		if (this.divElement !== undefined && this.divElement !== null) {
-			let height = this.divElement.clientHeight;
-			const heightPx = height.toString() + 'px';
-			if (heightPx !== this.state.height) {
-				if (height !== this.state.height) {
-					console.log(this.divElement);
-					this.setState({
-						height: heightPx
-					});
-				}
+		const firstItem = document.getElementById('first-item');
+		firstItem.style.display = 'block';
+		const maxHeight = firstItem.clientHeight;
+		firstItem.style.display = '';
+		const items = document.getElementsByClassName('carousel-item');
+		const activeItem = document.getElementsByClassName('active');
+		if (maxHeight-activeItem[0].clientHeight === 0) {
+
+			for(let i=0; i<items.length; i++) {
+				items[i].style.height = maxHeight + 'px';
+			}
+		} else {
+			for(let i=0; i<items.length; i++) {
+				items[i].style.height = maxHeight-activeItem[0].clientHeight + 'px';
 			}
 		}
 	}
@@ -27,9 +31,9 @@ class Slides extends Component {
 		console.log('class', this.divElement.getAttribute('class'));
 	}
 	componentDidMount() {
-		this.setHeight();
+		this.setHeight()
 		window.map = this;
-		window.addEventListener('resize', this.setHeight);
+		window.addEventListener('resize', this.setHeight.bind(this));
 	}
 	componentWillUnMount() {
 		window.removeEventListener('resize', this.setHeight);
@@ -43,6 +47,7 @@ class Slides extends Component {
 						ref={divElement => {
 							this.divElement = divElement;
 						}}
+						id="first-item"
 					>
 						<h5 className="company">
 							Data Engineering to Improve Time to Market
