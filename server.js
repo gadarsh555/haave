@@ -78,9 +78,14 @@ app.get('/db', (req, res) => {
 
 		request.on('row', function(columns) {
 			columns.forEach(function(column) {
-				console.log(column);
-				if (column.metadata.colName === 'SlackText') {
-					output.push({ value: column.value });
+				const val = String(column.value);
+				if (
+					val.indexOf('uploaded a file: <') > -1 &&
+					val.indexOf('Article Title:') > -1 &&
+					val.indexOf('Article URL:') > -1 &&
+					val.indexOf('Publication Date:') > -1
+				) {
+					output.push(parseSlackText(val));
 				}
 			});
 		});
@@ -88,6 +93,32 @@ app.get('/db', (req, res) => {
 	}
 });
 /* ============= End SQL =========== */
+/* =========== Parse Slack Text ========= */
+function parseSlackText(strRaw) {
+	var strImg = strRaw.split('uploaded a file: <')[1];
+	strImg = strImg.split('> and commented:')[0];
+	strImg = strImg.split('|')[0];
+
+	var strTitle = strRaw.split('Article Title:')[1];
+	strTitle = strTitle.split('Article URL:')[0];
+	strTitle = strTitle.trim();
+
+	var strURL = strRaw.split('Article URL: <')[1];
+	strURL = strURL.split('> Publication Date:')[0];
+
+	var strDate = strRaw.split('Publication Date:')[1];
+	strDate = strDate.trim();
+
+	var strResult = `{
+    "title": "${strTitle}",
+    "img": "${strImg}",
+    "url": "${strURL}",
+    "pubDate": "${strDate}"
+  }`;
+
+	return JSON.parse(strResult);
+}
+/* ============== End Parse =========== */
 
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
