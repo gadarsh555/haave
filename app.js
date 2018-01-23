@@ -8,12 +8,19 @@ const nodemailer = require('nodemailer');
 const Connection = require('tedious').Connection;
 const Request = require('tedious').Request;
 const cors = require('cors');
+
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Parsers
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+
+// Front End
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 // Email
 app.post('/contact', (req, res) => {
 	let transporter = nodemailer.createTransport({
@@ -130,9 +137,6 @@ function parseSlackText(strRaw) {
 	return strResult;
 }
 /* ============== End Parse =========== */
-app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 //Set Port
 const port = process.env.PORT || '8080';
