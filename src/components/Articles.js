@@ -13,7 +13,7 @@ class Articles extends Component {
 	}
 	componentDidMount() {
 		axios
-			.get('http://haave.azurewebsites.net/db', {
+			.get('http://localhost:8080/db', {
 				headers: {
 					'Content-Type': 'application/json'
 				}

@@ -130,7 +130,6 @@ function parseSlackText(strRaw) {
 	return strResult;
 }
 /* ============== End Parse =========== */
-
 app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
