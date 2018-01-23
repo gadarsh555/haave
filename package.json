@@ -1,6 +1,5 @@
 {
 	"name": "haave",
-	"homepage": "http://github-sbjacobs231.github.io/haave",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
