@@ -72,8 +72,15 @@ app.get('/db', (req, res) => {
 			rowCount,
 			rows
 		) {
-			console.log(output);
-			res.send(output);
+			// Delete duplicate db entries
+			var unique = [];
+			output.filter(item => {
+				const i = unique.findIndex(x => x.title == item.title);
+				if (i === -1) {
+					unique.push(item);
+				}
+			});
+			res.send(unique);
 			// process.exit();
 		});
 
@@ -81,7 +88,8 @@ app.get('/db', (req, res) => {
 			columns.forEach(function(column) {
 				const val = String(column.value);
 				if (
-					val.indexOf('uploaded a file: <') > -1 &&
+					// val.indexOf('uploaded a file: <') > -1 &&
+					val.indexOf('Image:') > -1 &&
 					val.indexOf('Article Title:') > -1 &&
 					val.indexOf('Article URL:') > -1 &&
 					val.indexOf('Publication Date:') > -1
@@ -96,16 +104,18 @@ app.get('/db', (req, res) => {
 /* ============= End SQL =========== */
 /* =========== Parse Slack Text ========= */
 function parseSlackText(strRaw) {
-	var strImg = strRaw.split('uploaded a file: <')[1];
-	strImg = strImg.split('> and commented:')[0];
-	strImg = strImg.split('|')[0];
+	// var strImg = strRaw.split('uploaded a file: <')[1];
+	// strImg = strImg.split('> and commented:')[0];
+	// strImg = strImg.split('|')[0];
+	var strImg = strRaw.split('Image: <')[1];
+	strImg = strImg.split('>')[0];
 
 	var strTitle = strRaw.split('Article Title:')[1];
 	strTitle = strTitle.split('Article URL:')[0];
 	strTitle = strTitle.trim();
 
 	var strURL = strRaw.split('Article URL: <')[1];
-	strURL = strURL.split('> Publication Date:')[0];
+	strURL = strURL.split('>')[0];
 
 	var strDate = strRaw.split('Publication Date:')[1];
 	strDate = strDate.trim();

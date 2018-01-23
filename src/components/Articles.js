@@ -19,7 +19,7 @@ class Articles extends Component {
 				}
 			})
 			.then(response => {
-				const limit = response.data.slice(0, 3);
+				const limit = response.data.reverse().slice(0, 3);
 				this.setState({ data: limit });
 			})
 			.catch(err => console.log(err));
