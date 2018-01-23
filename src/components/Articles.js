@@ -12,8 +12,10 @@ class Articles extends Component {
 		};
 	}
 	componentDidMount() {
+		//const url = 'http://localhost:8080/db'; // dev mode
+		const url = 'http://haave.azurewebsites.net/db'; // production
 		axios
-			.get('http://localhost:8080/db', {
+			.get(url, {
 				headers: {
 					'Content-Type': 'application/json'
 				}
