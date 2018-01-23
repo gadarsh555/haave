@@ -13,18 +13,18 @@ class Nav extends Component {
 		const { iframeFullScreen } = this.props;
 		return (
 			<nav style={iframeFullScreen ? styles.nav : null}>
-				<Link to={'/haave'}>
+				<Link to={'/'}>
 					<img src={require('../img/haave.png')} alt="logo" />
 				</Link>
 				<div className="ul-container">
 					<ul className="horizontal">
-						<Link to={'/haave/healthcare'}>
+						<Link to={'/healthcare'}>
 							<li>Healthcare</li>
 						</Link>
-						<Link to={'/haave/legal'}>
+						<Link to={'/legal'}>
 							<li>Legal</li>
 						</Link>
-						<Link to={'/haave/marketing'}>
+						<Link to={'/marketing'}>
 							<li>Marketing</li>
 						</Link>
 					</ul>
@@ -40,13 +40,13 @@ class Nav extends Component {
 					<div className="vi-container">
 						<ul className="vertical">
 							<li>
-								<Link to={'/haave/healthcare'}>Healthcare</Link>
+								<Link to={'/healthcare'}>Healthcare</Link>
 							</li>
 							<li>
-								<Link to={'/haave/legal'}>Legal</Link>
+								<Link to={'/legal'}>Legal</Link>
 							</li>
 							<li>
-								<Link to={'/haave/marketing'}>Marketing</Link>
+								<Link to={'/marketing'}>Marketing</Link>
 							</li>
 						</ul>
 					</div>
@@ -60,6 +60,6 @@ const styles = {
 	nav: {
 		display: 'none'
 	}
-}
+};
 
 export default Nav;

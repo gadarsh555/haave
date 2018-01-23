@@ -15,8 +15,14 @@ class App extends Component {
 		iframeFullScreen: false
 	};
 	componentDidMount() {
-		document.addEventListener("webkitfullscreenchange", this.toggleFullScreen.bind(this));
-		document.addEventListener("mozfullscreenchange", this.toggleFullScreen.bind(this));
+		document.addEventListener(
+			'webkitfullscreenchange',
+			this.toggleFullScreen.bind(this)
+		);
+		document.addEventListener(
+			'mozfullscreenchange',
+			this.toggleFullScreen.bind(this)
+		);
 	}
 	toggleFullScreen() {
 		this.setState({ iframeFullScreen: !this.state.iframeFullScreen });
@@ -30,11 +36,10 @@ class App extends Component {
 						<Nav iframeFullScreen={iframeFullScreen} />
 					</div>
 					<Switch>
-						{/* <Route exact path="/" component={Main} /> */}
-						<Route exact path="/haave" component={Main} />
-						<Route path="/haave/healthcare" component={Healthcare} />
-						<Route path="/haave/legal" component={Legal} />
-						<Route path="/haave/marketing" component={Marketing} />
+						<Route exact path="/" component={Main} />
+						<Route path="/healthcare" component={Healthcare} />
+						<Route path="/legal" component={Legal} />
+						<Route path="/marketing" component={Marketing} />
 					</Switch>
 					<div id="Footer">
 						<Footer />
