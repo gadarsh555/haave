@@ -7,6 +7,7 @@ class Healthcare extends Component {
 		window.scrollTo(0, 0);
 	}
 	render() {
+
 		return (
 			<div id="healthcare-container" className="animated fadeInUp">
 				<div id="healthcare-title">
@@ -133,8 +134,12 @@ class Healthcare extends Component {
 							allowFullScreen="true"
 							mozallowfullscreen="true"
 							webkitallowfullscreen="true"
+
+						>
+
 							title="health"
-						/>
+						</iframe>
+
 					</div>
 				</div>
 			</div>

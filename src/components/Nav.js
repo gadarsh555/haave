@@ -10,8 +10,9 @@ class Nav extends Component {
 	}
 
 	render() {
+		const { iframeFullScreen } = this.props;
 		return (
-			<nav>
+			<nav style={iframeFullScreen ? styles.nav : null}>
 				<Link to={'/haave'}>
 					<img src={require('../img/haave.png')} alt="logo" />
 				</Link>
@@ -52,6 +53,12 @@ class Nav extends Component {
 				</div>
 			</nav>
 		);
+	}
+}
+
+const styles = {
+	nav: {
+		display: 'none'
 	}
 }
 

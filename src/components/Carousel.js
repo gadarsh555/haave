@@ -9,27 +9,29 @@ class Slides extends Component {
 		};
 	}
 	setHeight() {
-		if (this.divElement !== undefined && this.divElement !== null) {
-			let height = this.divElement.clientHeight;
-			const heightPx = height.toString() + 'px';
-			if (heightPx !== this.state.height) {
-				if (height !== this.state.height) {
-					// console.log(this.divElement);
-					this.setState({
-						height: heightPx
-					});
-				}
+		
+
+		const items = document.getElementsByClassName('carousel-item');
+		if (window.innerWidth > 650) {
+			for(let i=0; i<items.length; i++) {
+				items[i].style.height = 325 + 'px';
+			}
+		} else {
+			for (let i=0; i<items.length; i++) {
+				items[i].style.height = 400 + 'px';
 			}
 		}
+
+
 	}
 	getHeight() {
 		console.log('div', this.divElement);
 		console.log('class', this.divElement.getAttribute('class'));
 	}
 	componentDidMount() {
-		this.setHeight();
+		this.setHeight()
 		window.map = this;
-		window.addEventListener('resize', this.setHeight);
+		window.addEventListener('resize', this.setHeight.bind(this));
 	}
 	componentWillUnMount() {
 		window.removeEventListener('resize', this.setHeight);
@@ -43,6 +45,7 @@ class Slides extends Component {
 						ref={divElement => {
 							this.divElement = divElement;
 						}}
+						id="first-item"
 					>
 						<h5 className="company">
 							Data Engineering to Improve Time to Market

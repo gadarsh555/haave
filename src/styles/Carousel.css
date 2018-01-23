@@ -27,18 +27,25 @@
 	.carousel-item {
 		padding: 0 20%;
 	}
+
 }
+
+
 @media (max-width: 900px) {
 	.carousel-item {
 		padding: 0 10%;
 	}
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 550px) and (min-width: 200px) {
 	.carousel-item {
 		padding: 0 5%;
 		height: auto;
 	}
 	#carousel a {
 		display: none;
+	}
+	.active {
+		max-height: 700px;
+		min-height: 530px;
 	}
 }
