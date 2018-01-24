@@ -10,6 +10,8 @@
 }
 .Template img {
 	width: 100%;
+	height: 160px;
+	object-fit: fill;
 }
 .Template h4 {
 	color: #00306e;
@@ -29,6 +31,7 @@
 		display: block;
 		margin-right: 0;
 		width: 100%;
+		height: auto;
 		margin-bottom: 45px;
 	}
 }
