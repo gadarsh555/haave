@@ -32,7 +32,7 @@ app.post('/contact', (req, res) => {
 	});
 	const mailOptions = {
 		from: 'contact.haave@gmail.com',
-		to: 'sky.jacobson231@gmail.com',
+		to: '', // enter recipient
 		subject: 'Contact Page',
 		html: `<p>Name: ${req.body.name}</p>
 					<p>Company: ${req.body.company}</p>
